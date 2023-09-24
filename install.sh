@@ -7,7 +7,7 @@
 
 { # this ensures the entire script is downloaded #
 
-    GITHUB_REPO="https://raw.githubusercontent.com/WeAllCode/laptop/main"
+    GITHUB_REPO="https://raw.githubusercontent.com/zachb1807/weallcode-laptop/main"
 
     output() {
         printf "\n\n✅ %s\n" "$1"

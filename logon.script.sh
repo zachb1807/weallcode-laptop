@@ -19,3 +19,27 @@ sleep 1
     --add /Applications/Firefox.app \
     --add /Applications/Visual\ Studio\ Code.app \
     --add /Applications/Unity/Unity.app
+
+# ---------------------------------------------
+
+sleep 1
+
+# Install Python extension for VS Code
+# If install fails (likely due to no Internet connection), will retry every 5 seconds
+# Sends notification when install is successful
+while ! code --install-extension ms-python.python
+do
+    sleep 5
+done
+osascript -e 'display notification "Successfully installed VS Code Python extension" with title "Python Extension Installed"'
+
+# ---------------------------------------------
+
+# Install 'weallcode_robot' Python package from pip3
+# If install fails (likely due to no Internet connection), will retry every 5 seconds
+# Sends notification when install is successful
+while ! pip3 install weallcode_robot
+do
+    sleep 5
+done
+osascript -e 'display notification "Successfully installed Python package weallcode_robot" with title "Robot Package Installed"'
