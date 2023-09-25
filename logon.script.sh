@@ -27,7 +27,7 @@ sleep 1
 # Install Python extension for VS Code
 # If install fails (likely due to no Internet connection), will retry every 5 seconds
 # Sends notification when install is successful
-while ! code --install-extension ms-python.python
+while ! /usr/local/bin/code --install-extension ms-python.python
 do
     sleep 5
 done
@@ -38,7 +38,7 @@ osascript -e 'display notification "Successfully installed VS Code Python extens
 # Install 'weallcode_robot' Python package from pip3
 # If install fails (likely due to no Internet connection), will retry every 5 seconds
 # Sends notification when install is successful
-while ! pip3 install weallcode_robot
+while ! /usr/local/bin/pip3 install weallcode_robot
 do
     sleep 5
 done
