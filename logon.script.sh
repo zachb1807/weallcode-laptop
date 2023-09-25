@@ -5,6 +5,11 @@ automator -i /Users/Shared/weallcode-background.png /Users/Shared/setDesktopWall
 
 # ---------------------------------------------
 
+# Copy robot tester file from shared to home dir
+cp /Users/Shared/robot-test.py ./robot-test.py
+
+# ---------------------------------------------
+
 # Open Survey
 open https://wac.fyi/survey
 

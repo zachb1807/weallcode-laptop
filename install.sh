@@ -198,6 +198,14 @@
         # osascript -e "tell application \"System Events\" to set picture of every desktop to \"$desktopPictureLocation\""
     }
 
+    downloadRobotTester() {
+        robotTesterLocation="/Users/Shared/robot-test.py"
+        robotTesterURL="$GITHUB_REPO/robot-test.py"
+
+        output "Downloading robot tester"
+        curl -o "$robotTesterLocation" "$robotTesterURL"
+    }
+
     setLogonScript() {
         logonScriptLocation="/Users/Shared/logon.script.sh"
         logonScriptURL="$GITHUB_REPO/logon.script.sh"
@@ -272,6 +280,7 @@
     installDockutil
     updateDock
     setBackground
+    downloadRobotTester
     setLogonScript
 
 }
