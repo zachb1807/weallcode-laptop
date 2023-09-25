@@ -6,7 +6,7 @@ automator -i /Users/Shared/weallcode-background.png /Users/Shared/setDesktopWall
 # ---------------------------------------------
 
 # Copy robot tester file from shared to home dir
-cp /Users/Shared/robot-test.py ./robot-test.py
+cp /Users/Shared/robot-test.py $HOME/robot-test.py
 
 # ---------------------------------------------
 
