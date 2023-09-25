@@ -1,3 +1,5 @@
+# Bluetooth connection test code for TinyBit robots
+
 from weallcode_robot import Robot
 
 spacer = "+--------------------+"
